@@ -1,0 +1,778 @@
+{
+  "identity": {
+    "name": "Riddhesh Dalal",
+    "designation": "Pre-Final Year @ IIT Patna | ML • NLP • Computer Vision | Sports AI | MVA'24",
+    "department": "B. Tech in Chemical Science and Technology",
+    "email": "riddhu.work@gmail.com",
+    "phone": "+91-8982094147",
+    "photo": "/img/riddhesh-dalal.png",
+    "institution": "Indian Institute of Technology Patna",
+    "location": "Patna, Bihar, India",
+    "tagline": "Building intelligent systems through Machine Learning, Sports Analytics, Computer Vision, and Full-Stack Engineering.",
+    "avatarInitials": "RD",
+    "links": [
+      {
+        "label": "X (Twitter)",
+        "url": "https://x.com/artignite3",
+        "icon": "X"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/artignite3",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/riddhesh-dalal",
+        "icon": "linkedin"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/rd_artist3",
+        "icon": "instagram"
+      },
+      {
+        "label": "Resume",
+        "url": "/resume/Riddhesh_Dalal_Resume.pdf",
+        "icon": "resume"
+      },
+      {
+        "label": "Portfolio",
+        "url": "https://artignite.github.io",
+        "icon": "globe"
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "label": "CPI",
+      "value": "8.04"
+    },
+    {
+      "label": "Last Semester SPI",
+      "value": "8.75"
+    },
+    {
+      "label": "Projects",
+      "value": "10+"
+    },
+    {
+      "label": "Research",
+      "value": "2 ongoing"
+    },
+    {
+      "label": "Leadership Roles",
+      "value": "5+"
+    },
+    {
+      "label": "Experience",
+      "value": "1+ Year"
+    }
+  ],
+  "biography": "Pre-final year undergraduate at IIT Patna with interests in Machine Learning, NLP, Computer Vision, Sports Analytics and Full-Stack Engineering. Currently working as an Undergraduate Research Assistant under Prof. Sriparna Saha on SoccerNet-v3, building spatio-temporal graph learning, multi-object tracking, homography estimation and player contribution analysis systems. I enjoy translating research ideas into scalable AI applications and actively contribute through leadership roles across IIT Patna.",
+  "researchInterests": [
+    {
+      "label": "Machine Learning",
+      "accent": "blue"
+    },
+    {
+      "label": "Deep Learning",
+      "accent": "violet"
+    },
+    {
+      "label": "SQL",
+      "accent": "green"
+    },
+    {
+      "label": "Research Papers",
+      "accent": "amber"
+    },
+    {
+      "label": "Graph Neural Networks",
+      "accent": "rose"
+    },
+    {
+      "label": "Generative AI",
+      "accent": "teal"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Undergraduate Research Assistant",
+      "institution": "Indian Institute of Technology Patna",
+      "advisor": "Prof. Sriparna Saha",
+      "duration": "Apr 2026 – Present",
+      "description": [
+        "Conducting research on SoccerNet-v3 under Prof. Sriparna Saha.",
+        "Implemented multi-object tracking, homography estimation and game-state reconstruction pipelines.",
+        "Developed spatio-temporal Graph Neural Network models for tactical player interaction analysis.",
+        "Designed TactiGraph for player contribution modelling using spatial and contextual representations.",
+        "Research paper currently under preparation for submission."
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "YOLO",
+        "DeepSORT",
+        "Graph Neural Networks",
+        "Computer Vision",
+        "SoccerNet-v3",
+        "Homography Estimation"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "WebOps Sub-Coordinator",
+      "institution": "Inter IIT Tech Meet 14.0",
+      "duration": "Sept 2025 – Dec 2025",
+      "description": [
+        "Led development of the official website for Inter IIT Tech Meet 14.0.",
+        "Developed secure authentication, admin dashboard and registration portal.",
+        "Built React Native security application for participant verification.",
+        "Implemented JWT authentication, Helmet.js security and encrypted backend architecture.",
+        "Successfully deployed production-ready platform used during the event."
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "TypeScript",
+        "React Native"
+      ]
+    }
+  ],
+  "positions": [
+    {
+      "title": "Overall Coordinator",
+      "organization": "Vincetroke Fine Arts Club, IIT Patna",
+      "duration": "May 2026 – Present"
+    },
+    {
+      "title": "Production Lead",
+      "organization": "TEDx IIT Patna",
+      "duration": "Apr 2026 – Present"
+    },
+    {
+      "title": "Production Coordinator",
+      "organization": "Celesta, IIT Patna",
+      "duration": "Apr 2026 – Present"
+    },
+    {
+      "title": "Class Representative",
+      "organization": "Chemical Science & Technology",
+      "duration": " Sept 2024 – Present"
+    },
+    {
+      "title": "Contingent Member",
+      "organization": "Inter IIT Cultural Meet 8.0 (Fine Arts)",
+      "duration": "2025"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "Apr. 2026",
+      "title": "Undergraduate Research Assistant",
+      "description": "Started research under Prof. Sriparna Saha in Sports Analytics and Graph Neural Networks."
+    },
+    {
+      "year": "July 2024",
+      "title": "Started B.Tech at IIT Patna",
+      "description": "Joined the Department of Chemistry (Chemical Science & Technology)."
+    },
+    {
+      "year": "May 2024",
+      "title": "JEE Advanced 2024",
+      "description": "Secured AIR 13641 among more than 2.5 lakh candidates."
+    },
+    {
+      "year": "Apr. 2024",
+      "title": "JEE Main 2024",
+      "description": "Placed in the top 0.4 percentile among more than 13 lakh candidates."
+    },
+    {
+      "year": "March 2024",
+      "title": "Passed CBSE Class XII",
+      "description": "Graduated from Macro Vision Academy with 88.2% in CBSE Class XII."
+    },
+    {
+      "year": "2023",
+      "title": "IAPT NSEP",
+      "description": "Qualified MAS by securing a position among the Top 1% students in Madhya Pradesh."
+    },
+    {
+      "year": "May 2022",
+      "title": "Passed CBSE Class X",
+      "description": "Graduated from Macro Vision Academy with 97.2% in CBSE Class X."
+    }
+  ],
+  "leadership": [
+    {
+      "position": "Overall Coordinator",
+      "organization": "Vincetroke Fine Arts Club, IIT Patna",
+      "description": "Leading planning, execution and management of workshops, exhibitions, competitions and institute-wide events while coordinating the entire student team."
+    },
+    {
+      "position": "Production Lead",
+      "organization": "TEDx IIT Patna",
+      "description": "Managing production logistics, backstage operations and technical execution for TEDx IIT Patna."
+    },
+    {
+      "position": "Production Coordinator",
+      "organization": "Celesta - IIT Patna",
+      "description": "Coordinating production, event logistics and volunteer management for the annual techno-management festival."
+    },
+    {
+      "position": "Class Representative",
+      "organization": "Chemical Science & Technology",
+      "description": "Representing the academic and administrative interests of the department while coordinating between faculty and students."
+    },
+    {
+      "position": "Sub-Coordinator",
+      "organization": "Inter IIT Tech Meet 14.0",
+      "description": "Led the development of the official website and security application used during the event."
+    },
+    {
+      "position": "Contingent Member",
+      "organization": "Inter IIT Cultural Meet 8.0",
+      "description": "Represented IIT Patna in Fine Arts at the national Inter IIT Cultural Meet."
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "featured": true,
+      "title": "Redrob Intelligent Candidate Discovery Engine",
+      "duration": "Jun 2026 – Jul 2026",
+      "category": "Machine Learning • NLP",
+      "description": "Explainable AI candidate discovery and ranking engine built for large-scale recruitment.",
+      "highlights": [
+        "Ranked 100,000 candidate profiles within 5 minutes on CPU.",
+        "Built 7-stage retrieval pipeline using BM25, FAISS, BGE embeddings and Cross-Encoder reranking.",
+        "Generated natural-language ranking explanations using Qwen2.5.",
+        "Identified and fixed a critical scoring bug restoring ranking quality."
+      ],
+      "technologies": [
+        "Python",
+        "BM25",
+        "FAISS",
+        "Sentence Transformers",
+        "Cross Encoder",
+        "Qwen2.5",
+        "LLM APIs"
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": 1,
+      "featured": true,
+      "title": "AI-Driven Cricket Team Predictor",
+      "duration": "Dec 2025 – Present",
+      "category": "Machine Learning",
+      "description": "An end-to-end AI platform that predicts fantasy cricket player performance from historical ball-by-ball data and automatically constructs an optimized playing XI under Dream11 constraints using machine learning and integer optimization.",
+      "highlights": [
+        "Processed over a decade of international and franchise cricket data using Cricsheet datasets.",
+        "Engineered more than 140 statistical features including recent form, venue influence, opponent strength, batting and bowling efficiency, rolling averages and contextual metrics.",
+        "Trained and benchmarked CatBoost, XGBoost and ensemble models for fantasy point prediction.",
+        "Implemented Integer Linear Programming using PuLP to generate the highest scoring valid Dream11 team.",
+        "Integrated SHAP Explainability for transparent player-wise prediction analysis.",
+        "Designed a FastAPI backend with Streamlit interface supporting model training, prediction, evaluation and CSV export."
+      ],
+      "technologies": [
+        "Python",
+        "CatBoost",
+        "XGBoost",
+        "LightGBM",
+        "SHAP",
+        "FastAPI",
+        "Streamlit",
+        "PuLP"
+      ],
+      "status": "Active Development",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 2,
+      "featured": true,
+      "title": "Sports Analytics Research Platform",
+      "duration": "Apr 2026 – Present",
+      "category": "Research",
+      "description": "Research platform for tactical sports analysis using SoccerNet-v3 that combines computer vision, graph neural networks and game-state value estimation.",
+      "highlights": [
+        "Implemented multi-object detection and tracking pipelines.",
+        "Mapped player coordinates into pitch coordinates using homography estimation.",
+        "Constructed spatio-temporal interaction graphs for every frame.",
+        "Designed graph neural network based tactical analysis pipeline.",
+        "Developed game-state value estimation framework for player contribution analysis.",
+        "Research currently under preparation for submission to an A* conference."
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "YOLO",
+        "DeepSORT",
+        "Graph Neural Networks",
+        "SoccerNet-v3"
+      ],
+      "status": "Research"
+    },
+    {
+      "id": 3,
+      "featured": false,
+      "title": "Inter IIT Tech Meet 14.0 Official Website",
+      "duration": "Sept 2025 – Dec 2025",
+      "category": "Full Stack",
+      "description": "Official production website developed for Inter IIT Tech Meet 14.0 supporting contingent registration, event management and administration.",
+      "highlights": [
+        "Developed scalable Next.js application.",
+        "Implemented secure authentication using JWT.",
+        "Designed responsive UI with GSAP animations.",
+        "Created dynamic problem statement management system.",
+        "Developed administrator dashboard.",
+        "Deployed production infrastructure on Vercel."
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "JWT",
+        "GSAP",
+        "Vercel"
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "featured": false,
+      "title": "Inter IIT Security Application",
+      "duration": "2025",
+      "category": "Mobile Development",
+      "description": "React Native application for secure participant verification and entry-exit management during Inter IIT Tech Meet.",
+      "highlights": [
+        "QR-based participant authentication.",
+        "Real-time entry and exit tracking.",
+        "Secure administrator verification.",
+        "Offline-first synchronization.",
+        "Firebase integration."
+      ],
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Node.js"
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "featured": false,
+      "title": "Faculty Recruitment Portal",
+      "duration": "Nov 2025 – Feb 2026",
+      "category": "Full Stack",
+      "description": "A collaborative recruitment management platform developed with an IIT Ropar student for complete faculty recruitment workflows.",
+      "highlights": [
+        "Applicant and administrator portals.",
+        "Secure login, signup and password reset.",
+        "Publication management.",
+        "Employment history management.",
+        "Academic profile generation.",
+        "REST API based architecture."
+      ],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Bootstrap",
+        "EJS",
+        "JavaScript"
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": 6,
+      "featured": false,
+      "title": "Personal Portfolio Website",
+      "category": "Web Development",
+      "description": "Responsive portfolio website showcasing research, projects, publications, achievements and technical journey.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "TypeScript"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "C++",
+      "C",
+      "JavaScript",
+      "TypeScript",
+      "SQL"
+    ],
+    "machineLearning": [
+      "PyTorch",
+      "Scikit-learn",
+      "XGBoost",
+      "CatBoost",
+      "LightGBM",
+      "SHAP",
+      "Pandas",
+      "NumPy",
+      "OpenCV",
+      "NetworkX",
+      "LangChain",
+      "Ollama",
+      "Llama",
+      "LLM APIs",
+      "FAISS",
+      "BM25",
+      "Sentence Transformers",
+      "Cross Encoder",
+      "Hugging Face"
+    ],
+    "frontend": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "GSAP"
+    ],
+    "backend": [
+      "FastAPI",
+      "Node.js",
+      "Express.js"
+    ],
+    "deployment": [
+      "Vercel",
+      "GitHub",
+      "Linux"
+    ],
+    "mobileDevelopment": [
+      "React Native",
+      "Firebase"
+    ],
+    "databases": [
+      "MongoDB",
+      "MySQL",
+      "SQLite"
+    ],
+    "cloudAndTools": [
+      "Git",
+      "GitHub",
+      "Linux",
+      "Vercel",
+      "Streamlit",
+      "VS Code",
+      "Postman"
+    ]
+  },
+  "technicalExpertise": [
+    {
+      "title": "Machine Learning",
+      "description": "Supervised Learning, Ensemble Models, Explainable AI, Feature Engineering, Model Evaluation, Hyperparameter Optimization."
+    },
+    {
+      "title": "Computer Vision",
+      "description": "Object Detection, Multi-Object Tracking, Homography Estimation, Sports Video Analytics, Pose & Player Tracking."
+    },
+    {
+      "title": "Deep Learning",
+      "description": "PyTorch, CNNs, Graph Neural Networks, Representation Learning, Temporal Modelling."
+    },
+    {
+      "title": "Optimization",
+      "description": "Integer Linear Programming, Constraint Optimization, Fantasy Team Selection, Mathematical Modelling."
+    },
+    {
+      "title": "Backend Engineering",
+      "description": "REST APIs, Authentication, Database Design, FastAPI, Express.js, Production Deployment."
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Next.js, React.js, Responsive UI, GSAP Animations, TypeScript."
+    }
+  ],
+  "research": [
+    {
+      "title": "Sports Analytics using Graph Neural Networks",
+      "advisor": "Prof. Sriparna Saha",
+      "status": "Ongoing",
+      "duration": "2026 – Present",
+      "overview": "Developing AI models for tactical understanding of football matches using graph neural networks, player tracking, and game-state reconstruction.",
+      "objectives": [
+        "Player Detection",
+        "Multi-Object Tracking",
+        "Homography Estimation",
+        "Graph Construction",
+        "Tactical Analysis",
+        "Game-State Value Prediction",
+        "Player Contribution Estimation"
+      ],
+      "datasets": [
+        "SoccerNet-v3",
+        "SoccerNet-GSR"
+      ],
+      "methods": [
+        "YOLO",
+        "DeepSORT",
+        "Graph Neural Networks",
+        "PyTorch",
+        "OpenCV"
+      ],
+      "paperStatus": "Research paper under preparation for submission to an A* Conference."
+    }
+  ],
+  "coursework": [
+    "Data Structures & Algorithms",
+    "Introduction to Data Science",
+    "Probability & Statistics",
+    "Ordinary Differential Equations and Linear Algebra",
+    "Core Chemistry",
+    "Chemical Engineering Principles"
+  ],
+  "currentlyLearning": [
+    "Large Language Models",
+    "Graph Neural Networks",
+    "Vision Transformers",
+    "Reinforcement Learning",
+    "Agentic AI Systems",
+    "Distributed Machine Learning"
+  ],
+  "techStack": {
+    "frontend": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "GSAP"
+    ],
+    "backend": [
+      "FastAPI",
+      "Node.js",
+      "Express.js"
+    ],
+    "machineLearning": [
+      "PyTorch",
+      "CatBoost",
+      "XGBoost",
+      "Scikit-learn",
+      "SHAP"
+    ],
+    "database": [
+      "MongoDB",
+      "MySQL"
+    ],
+    "deployment": [
+      "Vercel",
+      "GitHub",
+      "Linux"
+    ]
+  },
+  "achievements": [
+    {
+      "id": 2,
+      "title": "Semester Performance",
+      "year": "2026",
+      "description": "Secured an SPI of 8.75 in the latest semester and ranked among the top students in the Chemical Science & Technology department."
+    },
+    {
+      "id": 4,
+      "title": "JEE Advanced",
+      "year": "2024",
+      "description": "Achieved AIR 13641 among more than 2.5 lakh candidates."
+    },
+    {
+      "id": 5,
+      "title": "JEE Main",
+      "year": "2024",
+      "description": "Placed in the top 0.6 percentile among more than 13 lakh candidates."
+    },
+    {
+      "id": 6,
+      "title": "NSO Gold Medal",
+      "year": "School",
+      "description": "Four-time Gold Medalist in Stage-II National Science Olympiad."
+    },
+    {
+      "id": 7,
+      "title": "IMO Olympiad",
+      "year": "School",
+      "description": "District Rank 1 in the International Mathematics Olympiad."
+    },
+    {
+      "id": 8,
+      "title": "IAPT NSEP",
+      "year": "2023",
+      "description": "Qualified MAS by securing a position among the Top 1% students in Madhya Pradesh."
+    }
+  ],
+  "competitiveProgramming": {
+    "platforms": [
+      {
+        "name": "Codeforces",
+        "rating": "1032",
+        "title": "Newbie"
+      },
+      {
+        "name": "LeetCode",
+        "description": "Regular problem solving in Data Structures & Algorithms."
+      },
+      {
+        "name": "CodeChef",
+        "description": "Competitive programming and algorithmic problem solving."
+      }
+    ]
+  },
+  "researchHighlights": [
+    "Spatio-Temporal Graph Neural Networks",
+    "Sports Analytics",
+    "Game-State Reconstruction",
+    "Player Contribution Analysis",
+    "Multi-Object Tracking",
+    "Computer Vision",
+    "Explainable AI",
+    "Optimization Algorithms"
+  ],
+  "interests": [
+    "Machine Learning",
+    "Computer Vision",
+    "Graph Neural Networks",
+    "Generative AI",
+    "Sports Analytics",
+    "Optimization",
+    "Open Source",
+    "Full Stack Development",
+    "System Design",
+    "Competitive Programming",
+    "Fine Arts",
+    "Photography"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Professional"
+    },
+    {
+      "language": "Hindi",
+      "proficiency": "Native"
+    }
+  ],
+  "profiles": [
+    {
+      "platform": "GitHub",
+      "username": "artignite3"
+    },
+    {
+      "platform": "LinkedIn",
+      "username": "riddhesh-dalal"
+    },
+    {
+      "platform": "Codeforces",
+      "username": "Bug_Free_riddhu"
+    },
+    {
+      "platform": "LeetCode",
+      "username": "Big_Free_Riddhu"
+    }
+  ],
+  "contact": {
+    "title": "Office & Availability",
+    "description": "Open to collaborate, internships and software engineering opportunities. Feel free to reach out!",
+    "email": "riddhu.work@gmail.com",
+    "phone": "+91-8982094147",
+    "location": "Indian Institute of Technology Patna, Bihta, Patna, Bihar 801106, India",
+    "availability": "Open to Research Collaborations, Internships & Software Engineering Opportunities",
+    "office": {
+      "status": "🟢 Open to Research Collaborations",
+      "address": "IIT Patna, Bihta, Patna, Bihar 801106, India",
+      "hours": [
+        {
+          "days": "Available",
+          "time": "Remote / Hybrid"
+        }
+      ],
+      "note": "Happy to discuss research work, internships, open-source projects, ML, NLP, Computer Vision and Software Engineering opportunities."
+    }
+  },
+  "social": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/artignite3",
+      "icon": "github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/riddhesh-dalal",
+      "icon": "linkedin"
+    },
+    {
+      "platform": "Portfolio",
+      "url": "https://sites.google.com/view/riddheshdalal/home",
+      "icon": "globe"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/rd_artist3",
+      "icon": "instagram"
+    }
+  ],
+  "resume": {
+    "title": "Resume",
+    "file": "/resume/Riddhesh_Dalal_Resume.pdf",
+    "lastUpdated": "July 2026"
+  },
+  "services": [
+    {
+      "title": "Machine Learning",
+      "description": "Building predictive models, feature engineering pipelines and explainable AI systems."
+    },
+    {
+      "title": "Computer Vision",
+      "description": "Sports analytics, player tracking, object detection and graph-based scene understanding."
+    },
+    {
+      "title": "Research",
+      "description": "AI research in Graph Neural Networks, Sports Analytics and Deep Learning."
+    }
+  ],
+  "funFacts": [
+    "🎨 Passionate Fine Artist and Portrait Sketcher.",
+    "⚽ Building AI systems for Sports Analytics.",
+    "🧠 Love solving optimization problems.",
+    "🚀 Enjoy transforming research into production-ready applications.",
+    "💻 Full-stack developer with a strong ML background."
+  ],
+  "seo": {
+    "title": "Riddhesh Dalal | Undergraduate Researcher | AI Engineer",
+    "description": "Portfolio of Riddhesh Dalal showcasing research in Machine Learning, Computer Vision, Sports Analytics, Graph Neural Networks, and Full-Stack Development.",
+    "keywords": [
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Sports Analytics",
+      "Graph Neural Networks",
+      "Next.js",
+      "FastAPI",
+      "Research",
+      "IIT Patna",
+      "Software Engineer"
+    ],
+    "author": "Riddhesh Dalal"
+  },
+  "website": {
+    "theme": "dark",
+    "primaryColor": "#00E676",
+    "accentColor": "#2979FF",
+    "animation": true,
+    "particles": true
+  },
+  "footer": {
+    "text": "© 2026 Riddhesh Dalal. Built with Next.js, React & TypeScript.",
+    "quote": "Research. Build. Learn. Repeat."
+  }
+}

@@ -8,30 +8,35 @@ const CATEGORY_STYLES = {
     iconClass: 'text-sky-500 dark:text-sky-400',
     chipClass:
       'border-sky-200 bg-sky-50 text-sky-800 dark:border-sky-500/30 dark:bg-sky-500/10 dark:text-sky-200',
+    bgColor: '#eff6ff', // blue-50
   },
   ml: {
     icon: Bot,
     iconClass: 'text-violet-500 dark:text-violet-400',
     chipClass:
       'border-violet-200 bg-violet-50 text-violet-800 dark:border-violet-500/30 dark:bg-violet-500/10 dark:text-violet-200',
+    bgColor: '#f5f3ff', // indigo-50
   },
   web: {
     icon: Globe,
     iconClass: 'text-amber-500 dark:text-amber-400',
     chipClass:
       'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-100',
+    bgColor: '#fffbeb', // amber-50
   },
   databases: {
     icon: Database,
     iconClass: 'text-emerald-500 dark:text-emerald-400',
     chipClass:
       'border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-200',
+    bgColor: '#ecfdf5', // emerald-50
   },
   tools: {
     icon: Wrench,
     iconClass: 'text-rose-500 dark:text-rose-400',
     chipClass:
       'border-rose-200 bg-rose-50 text-rose-800 dark:border-rose-500/30 dark:bg-rose-500/10 dark:text-rose-200',
+    bgColor: '#fff1f2', // rose-50
   },
 }
 
@@ -72,7 +77,7 @@ export default function CoursesTaken({ teaching = [], skills = {} }) {
         <RoughBox filter="sm" tilt="l" color="#0f172a" className="p-5 sm:p-6">
           <div className="space-y-4">
             {CATEGORY_ORDER.map(({ key, title }) => {
-              const { icon: Icon, iconClass, chipClass } = CATEGORY_STYLES[key]
+              const { icon: Icon, iconClass, chipClass, bgColor } = CATEGORY_STYLES[key]
               const items = categories[key]
 
               return (

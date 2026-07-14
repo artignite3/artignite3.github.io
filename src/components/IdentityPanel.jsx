@@ -83,7 +83,7 @@ export default function IdentityPanel({ identity, metrics = [] }) {
                 style={{ filter: 'url(#rough-md)' }}
               >
                 <span className="h-2 w-2 rounded-full bg-green-500" aria-hidden="true" />
-                CSE · IIT Patna
+                B.Tech · IIT Patna
               </span>
             </div>
 

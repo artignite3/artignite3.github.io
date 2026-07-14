@@ -38,7 +38,7 @@
       },
       {
         "label": "Portfolio",
-        "url": "https://artignite.github.io",
+        "url": "riddhu-dev.vercel.app",
         "icon": "globe"
       }
     ]
@@ -173,39 +173,52 @@
   ],
   "timeline": [
     {
-      "year": "Apr. 2026",
+      "year": "Apr. 2026 ",
+      "present": true,
       "title": "Undergraduate Research Assistant",
       "description": "Started research under Prof. Sriparna Saha in Sports Analytics and Graph Neural Networks."
     },
     {
+      "year": "Apr 2026 ",
+      "present": true,
+      "title": "Overall Coordinator - Vincetroke Fine Arts Club, IIT Patna",
+      "description": "Managing and Organising Events & Session for Fine Arts Club Vincetroke Fine Arts Club, IIT Patna"
+    },
+    {
+      "year": "Apr 2026",
+      "present": true,
+      "title": "Production Lead - TEDx IIT Patna",
+      "description": "Overseeing the video and Production of the event, managing audio-visuals, stage setup and technical execution for TEDx IIT Patna "
+    },
+    {
       "year": "July 2024",
-      "title": "Started B.Tech at IIT Patna",
-      "description": "Joined the Department of Chemistry (Chemical Science & Technology)."
+      "present": true,
+      "title": "Started Bachelor of Technology at IIT Patna",
+      "description": "Joined as B.Tech student in the Department of Chemistry (Chemical Science & Technology)."
     },
     {
-      "year": "May 2024",
-      "title": "JEE Advanced 2024",
-      "description": "Secured AIR 13641 among more than 2.5 lakh candidates."
-    },
-    {
-      "year": "Apr. 2024",
-      "title": "JEE Main 2024",
-      "description": "Placed in the top 0.4 percentile among more than 13 lakh candidates."
+      "year": " Dec. 2025",
+      "present": false,
+      "title": "Fine Arts Contingent Member",
+      "description": "Participated in Acrylic Painting and Costume Design at Inter IIT Cultural Meet 8.0"
     },
     {
       "year": "March 2024",
+      "present": false,
       "title": "Passed CBSE Class XII",
-      "description": "Graduated from Macro Vision Academy with 88.2% in CBSE Class XII."
+      "description": "Graduated from Macro Vision Academy with 88.2% in CBSE Class XII and topped the school in Mathematics."
     },
     {
-      "year": "2023",
+      "year": "Nov. 2023",
+      "present": false,
       "title": "IAPT NSEP",
       "description": "Qualified MAS by securing a position among the Top 1% students in Madhya Pradesh."
     },
     {
       "year": "May 2022",
+      "present": false,
       "title": "Passed CBSE Class X",
-      "description": "Graduated from Macro Vision Academy with 97.2% in CBSE Class X."
+      "description": "Graduated from Macro Vision Academy with 97.2% in CBSE Class X and topped the school in Science, Mathematics and IT"
     }
   ],
   "leadership": [
@@ -404,7 +417,8 @@
         "React",
         "Tailwind CSS",
         "TypeScript"
-      ]
+      ],  
+      "status": "Forever ongoing"
     }
   ],
   "skills": {
@@ -688,7 +702,7 @@
     "location": "Indian Institute of Technology Patna, Bihta, Patna, Bihar 801106, India",
     "availability": "Open to Research Collaborations, Internships & Software Engineering Opportunities",
     "office": {
-      "status": "🟢 Open to Research Collaborations",
+      "status": "🟢 Open to any Collaborations",
       "address": "IIT Patna, Bihta, Patna, Bihar 801106, India",
       "hours": [
         {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import profile from "./data/profileData.json";
 import RoughFilters from "./components/RoughFilters";
 import MainNav from "./components/MainNav";
@@ -106,6 +107,7 @@ export default function App() {
       </div>
 
       <BackToTop />
+      <Analytics />
     </div>
   );
 }

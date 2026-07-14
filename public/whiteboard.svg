@@ -16,7 +16,7 @@
   <g filter="url(#r)" transform="rotate(-5 16 16)">
     <rect x="6" y="6" width="20" height="20" rx="2" fill="#dbeafe" stroke="#1e40af" stroke-width="1.4"/>
   </g>
-  <!-- marker "RM" -->
+  <!-- marker "RD" -->
   <text x="16" y="21" text-anchor="middle" font-family="'Caveat','Comic Sans MS',cursive"
-        font-size="14" font-weight="700" fill="#1e40af">RM</text>
+        font-size="14" font-weight="700" fill="#1e40af">RD</text>
 </svg>

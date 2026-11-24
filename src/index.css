@@ -3,26 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+  /* One graphite ramp, one marker-blue accent. */
   :root {
     color-scheme: light;
-    --wb-bg: #f7f7f3;
-    --wb-paper: #ffffff;
-    --wb-ink: #334155;
-    --wb-shadow: rgba(15, 23, 42, .06);
-    --wb-dot-minor: rgba(30, 41, 59, .11);
-    --wb-dot-major: rgba(30, 41, 59, .2);
-    --wb-grid: rgba(30, 41, 59, .05);
+    --bg: #fafaf9;
+    --card: #ffffff;
+    --raised: #f4f4f5;
+    --fg: #171717;
+    --fg-2: #525252;
+    --fg-3: #737373;
+    --line: rgba(23, 23, 23, 0.08);
+    --accent: #1d4ed8;
+    --accent-soft: #eef3ff;
+    --positive: #16a34a;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Whiteboard ink, used by RoughBox and the diagrams */
+    --wb-paper: var(--card);
+    --wb-ink: #3f3f46;
+    --wb-shadow: rgba(0, 0, 0, 0.05);
+    --wb-grid: rgba(23, 23, 23, 0.04);
   }
 
   .dark {
     color-scheme: dark;
-    --wb-bg: #0d1014;
-    --wb-paper: #1a1f29;
-    --wb-ink: #94a3b8;
-    --wb-shadow: rgba(0, 0, 0, .55);
-    --wb-dot-minor: rgba(148, 163, 184, .12);
-    --wb-dot-major: rgba(148, 163, 184, .22);
-    --wb-grid: rgba(148, 163, 184, .06);
+    --bg: #141415;
+    --card: #19191b;
+    --raised: #232325;
+    --fg: #ededed;
+    --fg-2: #a1a1a6;
+    --fg-3: #85858b;
+    --line: rgba(237, 237, 237, 0.08);
+    --accent: #7aa2ff;
+    --accent-soft: rgba(122, 162, 255, 0.12);
+    --positive: #4cc38a;
+
+    --wb-ink: #a1a1a6;
+    --wb-shadow: rgba(0, 0, 0, 0.35);
+    --wb-grid: rgba(237, 237, 237, 0.035);
   }
 
   html {
@@ -30,26 +48,19 @@
   }
 
   body {
-    @apply text-slate-800 antialiased dark:text-slate-200;
-    font-family: 'Kalam', 'Inter', ui-sans-serif, system-ui, sans-serif;
-    background-color: var(--wb-bg);
-    background-image: 
+    @apply font-sans antialiased;
+    color: var(--fg);
+    background-color: var(--bg);
+    /* Faint whiteboard grid */
+    background-image:
       linear-gradient(var(--wb-grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--wb-grid) 1px, transparent 1px),
-      radial-gradient(var(--wb-dot-minor) 1.2px, transparent 1.2px),
-      radial-gradient(var(--wb-dot-major) 1.7px, transparent 1.7px);
-    background-size: 
-      120px 120px,
-      120px 120px,
-      24px 24px,
-      120px 120px;
-    background-position: 
-      -1px -1px,
-      -1px -1px,
-      -1px -1px,
-      -1px -1px;
+      linear-gradient(90deg, var(--wb-grid) 1px, transparent 1px);
+    background-size: 32px 32px;
     background-attachment: fixed;
-    transition: background-color .3s ease, color .3s ease;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -61,56 +72,43 @@
     *::after {
       transition-duration: 0.01ms !important;
       animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
     }
   }
 }
 
 @layer components {
-  /* ---- Hand-drawn typography ---- */
   .font-marker {
-    font-family: 'Caveat', 'Kalam', cursive;
-  }
-  .font-pen {
-    font-family: 'Kalam', 'Inter', sans-serif;
+    font-family: 'Caveat', cursive;
   }
 
-  /* ---- Section heading written like a marker label ---- */
-  .wb-section-label {
-    @apply flex items-center gap-2 text-sm font-medium uppercase tracking-[0.15em] text-slate-500;
-    font-family: 'Kalam', sans-serif;
+  .keycap {
+    @apply inline-flex h-5 min-w-5 items-center justify-center rounded px-1 font-mono text-[11px] leading-none;
+    color: var(--fg-2);
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 0 var(--line);
   }
 
-  /* ---- Hachure fill: the diagonal pencil-shading Excalidraw uses ---- */
-  .hachure {
-    background-image: repeating-linear-gradient(
-      -45deg,
-      currentColor 0,
-      currentColor 1px,
-      transparent 1px,
-      transparent 7px
-    );
+  /* One short fade and rise, used for the hero and the diagram stages */
+  .rise {
+    animation: rise 420ms var(--ease) both;
   }
 }
 
-@layer utilities {
-  /* Slight hand-pinned tilt helpers (straighten on hover for liveliness). */
-  .tilt-l {
-    transform: rotate(-1.1deg);
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
-  .tilt-r {
-    transform: rotate(1deg);
-  }
-  .tilt-none-hover {
-    transition: transform 0.18s ease;
-  }
-  .tilt-none-hover:hover {
-    transform: rotate(0deg);
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
-/* Marker-style focus ring for keyboard users. */
 :focus-visible {
-  outline: 2.5px solid #1d4ed8;
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 2px;
+  border-radius: 4px;
 }

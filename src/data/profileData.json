@@ -2,13 +2,15 @@
   "identity": {
     "name": "Riddhesh Dalal",
     "designation": "Pre-Final Year @ IIT Patna | ML • NLP • Computer Vision | Sports AI | MVA'24",
+    "role": "Pre-final year B.Tech at IIT Patna · Research assistant at Drisha Lab with Prof. Sriparna Saha",
+    "status": "Open to internships & research collaborations",
     "department": "B. Tech in Chemical Science and Technology",
     "email": "riddhu.work@gmail.com",
     "phone": "+91-8982094147",
     "photo": "/img/riddhesh-dalal.png",
     "institution": "Indian Institute of Technology Patna",
     "location": "Patna, Bihar, India",
-    "tagline": "Building intelligent systems through Machine Learning, Sports Analytics, Computer Vision, and Full-Stack Engineering.",
+    "tagline": "I build retrieval engines, durable agent runtimes and cricket prediction models, and ship them on the web.",
     "avatarInitials": "RD",
     "links": [
       {
@@ -35,13 +37,10 @@
         "label": "Resume",
         "url": "/resume/Riddhesh_Dalal_Resume.pdf",
         "icon": "resume"
-      },
-      {
-        "label": "Portfolio",
-        "url": "riddhu-dev.vercel.app",
-        "icon": "globe"
       }
-    ]
+    ],
+    "githubUser": "artignite3",
+    "sourceRepo": "https://github.com/artignite3/artignite.github.io"
   },
   "metrics": [
     {
@@ -69,7 +68,7 @@
       "value": "1+ Year"
     }
   ],
-  "biography": "Pre-final year undergraduate at IIT Patna with interests in Machine Learning, NLP, Computer Vision, Sports Analytics and Full-Stack Engineering. Currently working as an Undergraduate Research Assistant under Prof. Sriparna Saha on SoccerNet-v3, building spatio-temporal graph learning, multi-object tracking, homography estimation and player contribution analysis systems. I enjoy translating research ideas into scalable AI applications and actively contribute through leadership roles across IIT Patna.",
+  "biography": "Pre-final year B.Tech student at IIT Patna, working across machine learning, AI agents and backend engineering. Since April 2026 I have been a research assistant at Drisha Lab with Prof. Sriparna Saha, studying how sequence models trained on cricket transfer across formats and eras; our paper is under review at ACL. I also build systems end to end: a 100,000-candidate ranking engine, a cricket squad optimiser that is live on the web, and a crash-safe runtime for coding agents. Outside the lab I coordinate the Vincetroke Fine Arts Club and lead production for TEDx IIT Patna.",
   "researchInterests": [
     {
       "label": "Machine Learning",
@@ -100,33 +99,30 @@
     {
       "id": 1,
       "role": "Undergraduate Research Assistant",
-      "institution": "Indian Institute of Technology Patna",
+      "institution": "Drisha Lab, IIT Patna",
       "advisor": "Prof. Sriparna Saha",
       "duration": "Apr 2026 – Present",
       "description": [
-        "Conducting research on SoccerNet-v3 under Prof. Sriparna Saha.",
-        "Implemented multi-object tracking, homography estimation and game-state reconstruction pipelines.",
-        "Developed spatio-temporal Graph Neural Network models for tactical player interaction analysis.",
-        "Designed TactiGraph for player contribution modelling using spatial and contextual representations.",
-        "Research paper currently under preparation for submission."
+        "Formulated a sequence forecasting benchmark from 5,593 matches (2.04M deliveries, 1.82M windows) across 6 format × era environments, to measure out-of-distribution transfer under format (ODI → T20) and temporal shifts.",
+        "Designed CricEnvGate, a 4-layer pre-LN Transformer with temperature-annealed soft gating into invariant and environment channels, trained with a gradient-reversal adversary, adversarial perturbation consistency, V-REx and worst-group risk.",
+        "Ran 284 experiments on 2× 80GB H100 GPUs across 6 methods and 8 ablations with 1,000-resample bootstraps.",
+        "Showed that domain-generalisation objectives match ERM within 0.004 nats under format shift, and traced a 0.025-nat temporal gap to test-time embedding blending, recovering 0.0248 nats by ablation.",
+        "Paper submitted to ACL, currently under review."
       ],
       "technologies": [
         "Python",
         "PyTorch",
-        "OpenCV",
-        "YOLO",
-        "DeepSORT",
-        "Graph Neural Networks",
-        "Computer Vision",
-        "SoccerNet-v3",
-        "Homography Estimation"
+        "Transformers",
+        "Domain generalisation",
+        "V-REx",
+        "H100 GPUs"
       ]
     },
     {
       "id": 2,
       "role": "WebOps Sub-Coordinator",
       "institution": "Inter IIT Tech Meet 14.0",
-      "duration": "Sept 2025 – Dec 2025",
+      "duration": "Sep 2025 – Dec 2025",
       "description": [
         "Led development of the official website for Inter IIT Tech Meet 14.0.",
         "Developed secure authentication, admin dashboard and registration portal.",
@@ -148,7 +144,7 @@
     {
       "title": "Overall Coordinator",
       "organization": "Vincetroke Fine Arts Club, IIT Patna",
-      "duration": "May 2026 – Present"
+      "duration": "Apr 2026 – Present"
     },
     {
       "title": "Production Lead",
@@ -163,7 +159,7 @@
     {
       "title": "Class Representative",
       "organization": "Chemical Science & Technology",
-      "duration": " Sept 2024 – Present"
+      "duration": "Sep 2024 – Sep 2026"
     },
     {
       "title": "Contingent Member",
@@ -240,7 +236,7 @@
     {
       "position": "Class Representative",
       "organization": "Chemical Science & Technology",
-      "description": "Representing the academic and administrative interests of the department while coordinating between faculty and students."
+      "description": "Represented the academic and administrative interests of the department and coordinated between faculty and students."
     },
     {
       "position": "Sub-Coordinator",
@@ -253,101 +249,194 @@
       "description": "Represented IIT Patna in Fine Arts at the national Inter IIT Cultural Meet."
     }
   ],
+  "education": [
+    {
+      "degree": "B.Tech, Chemical Science & Technology",
+      "institution": "Indian Institute of Technology Patna",
+      "duration": "2024 – Present",
+      "score": "CPI 8.04 · Last semester SPI 8.75"
+    },
+    {
+      "degree": "CBSE Class XII",
+      "institution": "Macro Vision Academy",
+      "duration": "2024",
+      "score": "88.2% · School topper in Mathematics"
+    },
+    {
+      "degree": "CBSE Class X",
+      "institution": "Macro Vision Academy",
+      "duration": "2022",
+      "score": "97.2% · School topper in Science, Mathematics & IT"
+    }
+  ],
   "projects": [
     {
-      "id": 0,
+      "id": 7,
       "featured": true,
-      "title": "Redrob Intelligent Candidate Discovery Engine",
-      "duration": "Jun 2026 – Jul 2026",
-      "category": "Machine Learning • NLP",
-      "description": "Explainable AI candidate discovery and ranking engine built for large-scale recruitment.",
+      "title": "AgentForge",
+      "duration": "Oct 2026 – Present",
+      "category": "Backend · AI infrastructure",
+      "status": "Deployed",
+      "description": "A durable execution runtime for repository-repair agents. Submit a job, inspect every model and tool step, and resume from the last committed checkpoint after a worker crash.",
+      "metrics": [
+        {
+          "value": "8.29 s",
+          "label": "live Gemini repo repair"
+        },
+        {
+          "value": "75",
+          "label": "automated tests"
+        },
+        {
+          "value": "$0.005",
+          "label": "estimated cost of that run"
+        }
+      ],
+      "pipeline": [
+        "SDK / dashboard",
+        "FastAPI",
+        "Postgres queue",
+        "Leased worker",
+        "Model router",
+        "Docker sandbox",
+        "Tests pass"
+      ],
       "highlights": [
-        "Ranked 100,000 candidate profiles within 5 minutes on CPU.",
-        "Built 7-stage retrieval pipeline using BM25, FAISS, BGE embeddings and Cross-Encoder reranking.",
-        "Generated natural-language ranking explanations using Qwen2.5.",
-        "Identified and fixed a critical scoring bug restoring ranking quality."
+        "PostgreSQL job queue with SKIP LOCKED claims and fenced worker leases; each step, checkpoint and event commits atomically.",
+        "A crashed run resumes from its latest checkpoint. Every run has a token and cost budget, and retries are jittered and honour the provider's Retry-After.",
+        "Vendor-neutral OpenAI and Gemini adapters sit behind a rules-based cost and fallback router, recorded in every trace.",
+        "Tools run in disposable non-root Docker sandboxes (no network, read-only root filesystem, resource limits) with anti-tamper test verification.",
+        "REST API, Python SDK and React dashboard, deployed on an Azure VM behind Caddy HTTPS, plus a 45-second launch film built with Remotion and Three.js."
       ],
       "technologies": [
         "Python",
-        "BM25",
-        "FAISS",
-        "Sentence Transformers",
-        "Cross Encoder",
-        "Qwen2.5",
-        "LLM APIs"
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Caddy",
+        "OpenAI",
+        "Gemini",
+        "React",
+        "TypeScript",
+        "Azure"
       ],
-      "status": "Completed"
+      "github": "https://github.com/artignite3/agentforge",
+      "video": "https://github.com/artignite3/agentforge/blob/main/assets/media/Project_Launch_Cinematic.mp4"
     },
     {
       "id": 1,
       "featured": true,
-      "title": "AI-Driven Cricket Team Predictor",
-      "duration": "Dec 2025 – Present",
+      "title": "NEW_X1 · Cricket Performance Intelligence",
+      "duration": "Dec 2025 – Oct 2026",
       "category": "Machine Learning",
-      "description": "An end-to-end AI platform that predicts fantasy cricket player performance from historical ball-by-ball data and automatically constructs an optimized playing XI under Dream11 constraints using machine learning and integer optimization.",
+      "status": "Live",
+      "description": "Analyses upcoming T20, ODI and Test fixtures, predicts each player's performance and recommends the playing XI. It started as a Dream11 team predictor and grew into a live web platform.",
+      "metrics": [
+        {
+          "value": "11–17%",
+          "label": "lower holdout MAE vs baselines"
+        },
+        {
+          "value": "73–76%",
+          "label": "of oracle XI points captured"
+        },
+        {
+          "value": "1,579",
+          "label": "test matches"
+        }
+      ],
+      "pipeline": [
+        "8,700+ matches",
+        "324 features",
+        "TriBE ensemble",
+        "PuLP MILP",
+        "Best XI + SHAP"
+      ],
       "highlights": [
-        "Processed over a decade of international and franchise cricket data using Cricsheet datasets.",
-        "Engineered more than 140 statistical features including recent form, venue influence, opponent strength, batting and bowling efficiency, rolling averages and contextual metrics.",
-        "Trained and benchmarked CatBoost, XGBoost and ensemble models for fantasy point prediction.",
-        "Implemented Integer Linear Programming using PuLP to generate the highest scoring valid Dream11 team.",
-        "Integrated SHAP Explainability for transparent player-wise prediction analysis.",
-        "Designed a FastAPI backend with Streamlit interface supporting model training, prediction, evaluation and CSV export."
+        "Leakage-free pipeline over 8,700+ matches: 191,462 records and 324 features, refreshed daily from Cricsheet.",
+        "A stacked TriBE ensemble (CatBoost, XGBoost, LightGBM) cuts holdout MAE by 11.4–17.0% and RMSE by 8.6–15.8% over baselines.",
+        "A covariance-regularised PuLP MILP picks the XI, capturing 73.2–76.2% of oracle XI points across 1,579 test matches.",
+        "FastAPI endpoints, SHAP explanations and local Llama 3.2 rationales, backed by 137 tests.",
+        "Static Next.js site on Cloudflare Pages with Supabase accounts; it stays up when the model server is offline."
       ],
       "technologies": [
         "Python",
         "CatBoost",
         "XGBoost",
         "LightGBM",
+        "PuLP (MILP)",
         "SHAP",
         "FastAPI",
-        "Streamlit",
-        "PuLP"
+        "Ollama (Llama 3.2)",
+        "Next.js",
+        "Supabase"
       ],
-      "status": "Active Development",
-      "github": "",
-      "demo": ""
+      "demo": "https://new-x1.pages.dev",
+      "github": "https://github.com/artignite3/NEW_X1",
+      "film": "/media/new-x1-launch.mp4",
+      "filmCaption": "Launch film I made for the NEW_X1 release"
     },
     {
-      "id": 2,
+      "id": 0,
       "featured": true,
-      "title": "Sports Analytics Research Platform",
-      "duration": "Apr 2026 – Present",
-      "category": "Research",
-      "description": "Research platform for tactical sports analysis using SoccerNet-v3 that combines computer vision, graph neural networks and game-state value estimation.",
+      "title": "Redrob Intelligent Candidate Discovery Engine",
+      "duration": "Jun 2026 – Jul 2026",
+      "category": "Machine Learning • NLP",
+      "description": "Ranks 100,000 candidate profiles against a job description on CPU in under five minutes, with a written reason for every one of the top 100.",
       "highlights": [
-        "Implemented multi-object detection and tracking pipelines.",
-        "Mapped player coordinates into pitch coordinates using homography estimation.",
-        "Constructed spatio-temporal interaction graphs for every frame.",
-        "Designed graph neural network based tactical analysis pipeline.",
-        "Developed game-state value estimation framework for player contribution analysis.",
-        "Research currently under preparation for submission to an A* conference."
+        "Led Team MM, four people, to a 7-stage hybrid search pipeline under the hackathon's CPU-only, five-minute budget.",
+        "A honeypot check removes misleading or low-quality profiles before any ranking.",
+        "Weighted BM25 and positive and negative recruiter-intent embeddings (BGE-base, FAISS), fused with Reciprocal Rank Fusion.",
+        "A behavioural layer scores availability, market interest and trust as a multiplier that refines without filtering anyone out.",
+        "Cross-encoder re-ranking, then Qwen2.5 structured prompts produce calibrated scores with a written reason for each rank."
       ],
       "technologies": [
         "Python",
-        "PyTorch",
-        "OpenCV",
-        "YOLO",
-        "DeepSORT",
-        "Graph Neural Networks",
-        "SoccerNet-v3"
+        "BM25",
+        "FAISS",
+        "BGE embeddings",
+        "Sentence Transformers",
+        "Cross-Encoder",
+        "Qwen2.5",
+        "RRF"
       ],
-      "status": "Research"
+      "status": "Completed",
+      "context": "INDIA.RUNS Hackathon · Redrob AI × Hack2Skill · led a team of 4",
+      "github": "https://github.com/artignite3/TEAM_MM",
+      "metrics": [
+        {
+          "value": "100k",
+          "label": "profiles ranked on CPU"
+        },
+        {
+          "value": "< 5 min",
+          "label": "end to end"
+        },
+        {
+          "value": "≥ 330",
+          "label": "profiles per second"
+        }
+      ],
+      "pipeline": [
+        "100k profiles",
+        "Honeypot check",
+        "Weighted BM25",
+        "FAISS ± intent",
+        "RRF fusion",
+        "Behaviour signals",
+        "Cross-encoder",
+        "Qwen2.5 reasons"
+      ]
     },
     {
       "id": 3,
       "featured": false,
-      "title": "Inter IIT Tech Meet 14.0 Official Website",
-      "duration": "Sept 2025 – Dec 2025",
+      "title": "Inter IIT Tech Meet 14.0: website and security app",
+      "duration": "Sep 2025 – Dec 2025",
       "category": "Full Stack",
-      "description": "Official production website developed for Inter IIT Tech Meet 14.0 supporting contingent registration, event management and administration.",
-      "highlights": [
-        "Developed scalable Next.js application.",
-        "Implemented secure authentication using JWT.",
-        "Designed responsive UI with GSAP animations.",
-        "Created dynamic problem statement management system.",
-        "Developed administrator dashboard.",
-        "Deployed production infrastructure on Vercel."
-      ],
+      "status": "Completed",
+      "description": "As WebOps sub-coordinator I led the official event website (registration, problem statements, admin dashboard) and a React Native app that verified participants at entry and exit.",
       "technologies": [
         "Next.js",
         "React",
@@ -356,30 +445,11 @@
         "MongoDB",
         "JWT",
         "GSAP",
-        "Vercel"
-      ],
-      "status": "Completed"
-    },
-    {
-      "id": 4,
-      "featured": false,
-      "title": "Inter IIT Security Application",
-      "duration": "2025",
-      "category": "Mobile Development",
-      "description": "React Native application for secure participant verification and entry-exit management during Inter IIT Tech Meet.",
-      "highlights": [
-        "QR-based participant authentication.",
-        "Real-time entry and exit tracking.",
-        "Secure administrator verification.",
-        "Offline-first synchronization.",
-        "Firebase integration."
-      ],
-      "technologies": [
         "React Native",
         "Firebase",
-        "Node.js"
+        "Vercel"
       ],
-      "status": "Completed"
+      "github": "https://github.com/artignite3/Inter-IIT-Tech-Meet-14.0"
     },
     {
       "id": 5,
@@ -404,7 +474,8 @@
         "EJS",
         "JavaScript"
       ],
-      "status": "Completed"
+      "status": "Completed",
+      "github": "https://github.com/pankhudibuilds/Faculty-Recruitment-Portal-"
     },
     {
       "id": 6,
@@ -413,12 +484,13 @@
       "category": "Web Development",
       "description": "Responsive portfolio website showcasing research, projects, publications, achievements and technical journey.",
       "technologies": [
-        "Next.js",
         "React",
+        "Vite",
         "Tailwind CSS",
-        "TypeScript"
-      ],  
-      "status": "Forever ongoing"
+        "JavaScript"
+      ],
+      "status": "Forever ongoing",
+      "github": "https://github.com/artignite3/artignite.github.io"
     }
   ],
   "skills": {
@@ -455,7 +527,9 @@
       "Next.js",
       "React",
       "TypeScript",
-      "GSAP"
+      "GSAP",
+      "Remotion",
+      "Three.js"
     ],
     "backend": [
       "FastAPI",
@@ -474,7 +548,10 @@
     "databases": [
       "MongoDB",
       "MySQL",
-      "SQLite"
+      "SQLite",
+      "PostgreSQL",
+      "Redis",
+      "Supabase"
     ],
     "cloudAndTools": [
       "Git",
@@ -483,7 +560,19 @@
       "Vercel",
       "Streamlit",
       "VS Code",
-      "Postman"
+      "Postman",
+      "Docker",
+      "Azure",
+      "Cloudflare Pages",
+      "GitHub Actions"
+    ],
+    "agents": [
+      "Agent runtimes",
+      "Context memory",
+      "Prompt engineering",
+      "Dense embeddings (BGE)",
+      "Gemini API",
+      "Ollama (Llama 3.2, Qwen2.5)"
     ]
   },
   "technicalExpertise": [
@@ -514,41 +603,32 @@
   ],
   "research": [
     {
-      "title": "Sports Analytics using Graph Neural Networks",
+      "title": "Out-of-distribution transfer for cricket sequence prediction",
       "advisor": "Prof. Sriparna Saha",
+      "lab": "Drisha Lab",
       "status": "Ongoing",
-      "duration": "2026 – Present",
-      "overview": "Developing AI models for tactical understanding of football matches using graph neural networks, player tracking, and game-state reconstruction.",
-      "objectives": [
-        "Player Detection",
-        "Multi-Object Tracking",
-        "Homography Estimation",
-        "Graph Construction",
-        "Tactical Analysis",
-        "Game-State Value Prediction",
-        "Player Contribution Estimation"
+      "duration": "Apr 2026 – Present",
+      "overview": "A sequence forecasting benchmark that tests whether cricket models trained on one format or era still work on another (ODI → T20, and across time), and CricEnvGate, a Transformer built to separate what transfers from what does not.",
+      "pipeline": [
+        "5,593 matches",
+        "2.04M deliveries",
+        "1.82M windows",
+        "6 format × era environments",
+        "CricEnvGate",
+        "Out-of-distribution test"
       ],
       "datasets": [
-        "SoccerNet-v3",
-        "SoccerNet-GSR"
+        "284 experiments on 2× 80GB H100",
+        "DG objectives within 0.004 nats of ERM"
       ],
-      "methods": [
-        "YOLO",
-        "DeepSORT",
-        "Graph Neural Networks",
-        "PyTorch",
-        "OpenCV"
-      ],
-      "paperStatus": "Research paper under preparation for submission to an A* Conference."
+      "paperStatus": "Submitted to ACL, under review"
     }
   ],
   "coursework": [
     "Data Structures & Algorithms",
-    "Introduction to Data Science",
+    "Linear Algebra",
     "Probability & Statistics",
-    "Ordinary Differential Equations and Linear Algebra",
-    "Core Chemistry",
-    "Chemical Engineering Principles"
+    "Introduction to Data Science"
   ],
   "currentlyLearning": [
     "Large Language Models",
@@ -598,13 +678,13 @@
       "id": 4,
       "title": "JEE Advanced",
       "year": "2024",
-      "description": "Achieved AIR 13641 among more than 2.5 lakh candidates."
+      "description": "AIR 13,641, top 5% of about 2.5 lakh candidates."
     },
     {
       "id": 5,
       "title": "JEE Main",
       "year": "2024",
-      "description": "Placed in the top 0.6 percentile among more than 13 lakh candidates."
+      "description": "99.4 percentile, top 0.6% of 13.5 lakh candidates."
     },
     {
       "id": 6,
@@ -623,6 +703,12 @@
       "title": "IAPT NSEP",
       "year": "2023",
       "description": "Qualified MAS by securing a position among the Top 1% students in Madhya Pradesh."
+    },
+    {
+      "id": 9,
+      "title": "Problem solving",
+      "year": "",
+      "description": "300+ DSA problems and 100+ SQL queries solved across competitive coding platforms."
     }
   ],
   "competitiveProgramming": {
@@ -643,14 +729,14 @@
     ]
   },
   "researchHighlights": [
-    "Spatio-Temporal Graph Neural Networks",
-    "Sports Analytics",
-    "Game-State Reconstruction",
-    "Player Contribution Analysis",
-    "Multi-Object Tracking",
-    "Computer Vision",
+    "Domain generalisation",
+    "Sequence modelling",
+    "Transformers",
+    "Information retrieval",
+    "AI agents and tool use",
+    "Sports analytics",
     "Explainable AI",
-    "Optimization Algorithms"
+    "Optimisation"
   ],
   "interests": [
     "Machine Learning",
@@ -696,7 +782,7 @@
   ],
   "contact": {
     "title": "Office & Availability",
-    "description": "Open to collaborate, internships and software engineering opportunities. Feel free to reach out!",
+    "description": "Open to research collaborations, internships and software engineering roles. Email is the fastest way to reach me.",
     "email": "riddhu.work@gmail.com",
     "phone": "+91-8982094147",
     "location": "Indian Institute of Technology Patna, Bihta, Patna, Bihar 801106, India",

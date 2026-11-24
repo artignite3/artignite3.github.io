@@ -1,110 +1,106 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import profile from "./data/profileData.json";
 import RoughFilters from "./components/RoughFilters";
 import MainNav from "./components/MainNav";
-import IdentityPanel from "./components/IdentityPanel";
-import Biography from "./components/Biography";
-import Interests from "./components/Interests";
-
-import ExperienceTimeline from "./components/ExperienceTimeline";
-// import Publications from './components/Publications'
-// import TeachingAndHonors from './components/TeachingAndHonors'
-import Contact from "./components/Contact";
+import CommandPalette from "./components/CommandPalette";
+import Intro from "./components/Intro";
+import About from "./components/About";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import CoursesTaken from "./components/CoursesTaken";
-import Achievements from "./components/Achievements";
+import GitHubActivity from "./components/GitHubActivity";
+import Toolbox from "./components/Toolbox";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 import BackToTop from "./components/BackToTop";
 
-// The whole UI is driven by profileData.json — nothing below is hardcoded
-// content. Swap the JSON and the page re-renders for any faculty member.
+/* global __BUILD_DATE__, __COMMIT__ */
+const builtOn = new Date(__BUILD_DATE__).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+
+// All content comes from profileData.json.
 export default function App() {
-  const {
-    identity,
-    metrics,
-    biography,
-    researchInterests: interests,
-    skills,
-    projects,
-    achievements,
-    coursework,
-    contact,
-    timeline,
-  } = profile;
+  const p = profile;
+  const [paletteOpen, setPaletteOpen] = useState(false);
 
-  // Canonical "all publications" destination for the popup footer.
-  const scholarUrl = identity.links?.find((l) => l.icon === "scholar")?.url;
+  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"));
 
-  // Theme state management
-  const [isDark, setIsDark] = useState(false);
-
-  // Initialize theme from localStorage or system preference on first render
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark" || storedTheme === "light") {
-      setIsDark(storedTheme === "dark");
-    } else {
-      setIsDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
-    }
-
-    // Apply theme to document
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
-
-  // Update DOM and localStorage when theme changes
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [isDark]);
+
+  const toggleTheme = useCallback(
+    () =>
+      setIsDark((d) => {
+        try {
+          localStorage.setItem("theme", d ? "light" : "dark");
+        } catch {}
+        return !d;
+      }),
+    [],
+  );
+
+  // ⌘K / Ctrl+K opens the command menu, "/" too when not typing.
+  useEffect(() => {
+    const onKey = (e) => {
+      const typing = /input|textarea/i.test(e.target.tagName);
+      if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !typing)) {
+        e.preventDefault();
+        setPaletteOpen((o) => !o);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   return (
     <div id="top" className="min-h-screen">
-      {/* Hand-drawn SVG ink filters, injected once */}
       <RoughFilters />
 
-      {/* Skip link for keyboard / screen-reader users */}
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-blue-700 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-fg focus:px-4 focus:py-2 focus:text-sm focus:text-bg"
       >
         Skip to content
       </a>
 
-      {/* Sticky, responsive site navigation + theme toggle */}
       <MainNav
-        name={identity.name}
+        name={p.identity.name}
         isDark={isDark}
-        onToggleTheme={() => setIsDark(!isDark)}
+        onToggleTheme={toggleTheme}
+        onOpenPalette={() => setPaletteOpen(true)}
+      />
+      <CommandPalette
+        open={paletteOpen}
+        onClose={() => setPaletteOpen(false)}
+        identity={p.identity}
+        onToggleTheme={toggleTheme}
       />
 
-      <div className="mx-auto flex max-w-7xl flex-col lg:flex-row">
-        {/* LEFT — Identity Anchor (sticky on desktop) */}
-        <IdentityPanel identity={identity} metrics={metrics} />
+      <main id="main" className="mx-auto max-w-5xl space-y-24 px-5 pb-24 sm:px-8">
+        <Intro identity={p.identity} research={p.research?.[0]} />
+        <About identity={p.identity} biography={p.biography} focus={p.researchHighlights} learning={p.currentlyLearning} />
+        <Experience experience={p.experience} positions={p.positions} leadership={p.leadership} />
+        <Projects projects={p.projects} />
+        <GitHubActivity user={p.identity.githubUser} />
+        <Toolbox skills={p.skills} coursework={p.coursework} />
+        <Education education={p.education} achievements={p.achievements} />
+        <Contact contact={p.contact} links={p.identity.links} />
+      </main>
 
-        {/* RIGHT — Data Canvas */}
-        <main
-          id="main"
-          className="w-full px-5 py-10 sm:px-8 lg:w-[65%] lg:border-l lg:border-slate-200 lg:px-12 lg:py-16 dark:lg:border-slate-700"
-        >
-          <div className="space-y-12">
-            <Biography text={biography} />
-            <Interests interests={interests} />
-            <ExperienceTimeline timeline={timeline} />
-            <Projects projects={projects} />
-            <CoursesTaken teaching={coursework} skills={skills} />
-            <Achievements achievements={achievements} />
-            <Contact contact={contact} />
-            <BackToTop />
-          </div>
-
-          {/* Footer / colophon */}
-          <footer className="mt-16 border-t-2 border-dashed border-slate-300 pt-6 dark:border-slate-700">
-            <p className="font-pen text-sm text-slate-400 dark:text-slate-500">
-              {identity.institution} · {identity.department}
-            </p>
-          </footer>
-        </main>
-      </div>
+      <footer className="mx-auto max-w-5xl px-5 pb-12 sm:px-8">
+        <div className="flex flex-wrap justify-between gap-x-6 gap-y-2 border-t border-line pt-6 font-mono text-xs text-fg-3">
+          <p>
+            {p.identity.name} · {p.identity.institution}
+          </p>
+          <p>
+            Built with React and Vite · updated {builtOn}
+            {__COMMIT__ ? ` · ${__COMMIT__}` : ""} ·{" "}
+            <a href={p.identity.sourceRepo} target="_blank" rel="noreferrer noopener" className="text-fg-2 hover:text-fg">
+              source
+            </a>
+          </p>
+        </div>
+      </footer>
 
       <BackToTop />
       <Analytics />

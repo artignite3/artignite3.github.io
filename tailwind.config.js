@@ -5,40 +5,23 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'Inter',
-          'ui-sans-serif',
-          'system-ui',
-          '-apple-system',
-          'Segoe UI',
-          'Roboto',
-          'Helvetica Neue',
-          'Arial',
-          'sans-serif',
-        ],
-        mono: [
-          'ui-monospace',
-          'SFMono-Regular',
-          'Menlo',
-          'Consolas',
-          'Liberation Mono',
-          'monospace',
-        ],
+        sans: ['Geist', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['Geist Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
       },
       colors: {
-        // Muted, "engineering marker" palette for sticky-note accents.
-        marker: {
-          blue: '#1d4ed8',
-          teal: '#0f766e',
-          amber: '#b45309',
-          violet: '#6d28d9',
-          rose: '#be123c',
-          green: '#15803d',
-        },
+        bg: 'var(--bg)',
+        card: 'var(--card)',
+        raised: 'var(--raised)',
+        fg: 'var(--fg)',
+        'fg-2': 'var(--fg-2)',
+        'fg-3': 'var(--fg-3)',
+        line: 'var(--line)',
+        accent: 'var(--accent)',
+        'accent-soft': 'var(--accent-soft)',
+        positive: 'var(--positive)',
       },
-      boxShadow: {
-        card: '0 1px 2px 0 rgba(15, 23, 42, 0.04)',
-        'card-hover': '0 8px 24px -8px rgba(15, 23, 42, 0.12)',
+      transitionTimingFunction: {
+        out: 'cubic-bezier(0.22, 1, 0.36, 1)',
       },
     },
   },

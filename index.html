@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Riddhesh Dalal — B.Tech student at IIT Patna.."
+      content="Riddhesh Dalal, pre-final year B.Tech at IIT Patna. Retrieval and ranking engines, durable AI agent runtimes, cricket ML research and production web apps."
     />
-    <!-- Inter via Google Fonts (with system fallback in Tailwind config) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Hand-drawn whiteboard fonts: Kalam (pen, readable body) + Caveat (marker, display) -->
+    <!-- Geist for reading, Geist Mono for meta, Caveat for the marker headings and diagrams -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <title>Riddhesh Dalal · CST, IIT Patna</title>
     <!-- Set the theme class before first paint to avoid a flash of the wrong
-         theme. Light is the default; only go dark when the user explicitly chose it. -->
+         theme. Uses the saved choice, otherwise the system setting. -->
     <script>
       (function () {
         try {
-          if (localStorage.getItem('theme') === 'dark') {
+          var t = localStorage.getItem('theme'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
           }
         } catch (e) {}

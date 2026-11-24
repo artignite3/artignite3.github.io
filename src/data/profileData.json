@@ -68,7 +68,7 @@
       "value": "1+ Year"
     }
   ],
-  "biography": "Pre-final year B.Tech student at IIT Patna, working across machine learning, AI agents and backend engineering. Since April 2026 I have been a research assistant at Drisha Lab with Prof. Sriparna Saha, studying how sequence models trained on cricket transfer across formats and seasons; our paper is under review at ACL. I also build systems end to end: a 100,000-candidate ranking engine, a cricket squad optimiser that is live on the web, and a crash-safe runtime for coding agents. Outside the lab I coordinate the Vincetroke Fine Arts Club and lead production for TEDx IIT Patna.",
+  "biography": "Pre-final year B.Tech student at IIT Patna, working across machine learning, AI agents and backend engineering. Since April 2026 I have been a research assistant at Drisha Lab with Prof. Sriparna Saha, studying how sequence models trained on cricket transfer across formats and eras; our paper is under review at ACL. I also build systems end to end: a 100,000-candidate ranking engine, a cricket squad optimiser that is live on the web, and a crash-safe runtime for coding agents. Outside the lab I coordinate the Vincetroke Fine Arts Club and lead production for TEDx IIT Patna.",
   "researchInterests": [
     {
       "label": "Machine Learning",
@@ -103,9 +103,10 @@
       "advisor": "Prof. Sriparna Saha",
       "duration": "Apr 2026 – Present",
       "description": [
-        "Built a sequence prediction benchmark across 5,593 matches (2.04M events, 1.82M windows) in 6 environments, to measure out-of-distribution transfer under format and temporal shifts.",
-        "Designed CricEnvGate, a 4-layer Transformer with soft gating that separates invariant representations from domain context.",
-        "Ran 284 controlled experiments across 6 domain-generalisation objectives on 2× H100 GPUs.",
+        "Formulated a sequence forecasting benchmark from 5,593 matches (2.04M deliveries, 1.82M windows) across 6 format × era environments, to measure out-of-distribution transfer under format (ODI → T20) and temporal shifts.",
+        "Designed CricEnvGate, a 4-layer pre-LN Transformer with temperature-annealed soft gating into invariant and environment channels, trained with a gradient-reversal adversary, adversarial perturbation consistency, V-REx and worst-group risk.",
+        "Ran 284 experiments on 2× 80GB H100 GPUs across 6 methods and 8 ablations with 1,000-resample bootstraps.",
+        "Showed that domain-generalisation objectives match ERM within 0.004 nats under format shift, and traced a 0.025-nat temporal gap to test-time embedding blending, recovering 0.0248 nats by ablation.",
         "Paper submitted to ACL, currently under review."
       ],
       "technologies": [
@@ -113,6 +114,7 @@
         "PyTorch",
         "Transformers",
         "Domain generalisation",
+        "V-REx",
         "H100 GPUs"
       ]
     },
@@ -279,11 +281,11 @@
       "metrics": [
         {
           "value": "8.29 s",
-          "label": "live code repair on Azure"
+          "label": "live Gemini repo repair"
         },
         {
-          "value": "53",
-          "label": "automated CI tests"
+          "value": "75",
+          "label": "automated tests"
         },
         {
           "value": "$0.005",
@@ -300,11 +302,11 @@
         "Tests pass"
       ],
       "highlights": [
-        "PostgreSQL is both queue and state store: FOR UPDATE SKIP LOCKED claims, expiring leases and fencing tokens, with each step, checkpoint and event committed atomically.",
-        "A crashed run resumes from its latest checkpoint. Submissions are idempotent, retries are bounded with jitter, and every run has a deadline and a token and cost budget.",
+        "PostgreSQL job queue with SKIP LOCKED claims and fenced worker leases; each step, checkpoint and event commits atomically.",
+        "A crashed run resumes from its latest checkpoint. Every run has a token and cost budget, and retries are jittered and honour the provider's Retry-After.",
         "Vendor-neutral OpenAI and Gemini adapters sit behind a rules-based cost and fallback router, recorded in every trace.",
-        "Tools run in disposable Docker containers: non-root, no network, read-only root filesystem, with CPU, memory, PID and time limits.",
-        "React and TypeScript dashboard for runs, timelines, checkpoints and providers, deployed on Azure, plus a 45-second launch film built with Remotion and Three.js."
+        "Tools run in disposable non-root Docker sandboxes (no network, read-only root filesystem, resource limits) with anti-tamper test verification.",
+        "REST API, Python SDK and React dashboard, deployed on an Azure VM behind Caddy HTTPS, plus a 45-second launch film built with Remotion and Three.js."
       ],
       "technologies": [
         "Python",
@@ -312,12 +314,11 @@
         "PostgreSQL",
         "Redis",
         "Docker",
-        "Alembic",
+        "Caddy",
         "OpenAI",
         "Gemini",
         "React",
         "TypeScript",
-        "Prometheus",
         "Azure"
       ],
       "github": "https://github.com/artignite3/agentforge",
@@ -567,10 +568,9 @@
     ],
     "agents": [
       "Agent runtimes",
-      "Tool calling",
-      "Structured outputs",
       "Context memory",
       "Prompt engineering",
+      "Dense embeddings (BGE)",
       "Gemini API",
       "Ollama (Llama 3.2, Qwen2.5)"
     ]
@@ -608,28 +608,24 @@
       "lab": "Drisha Lab",
       "status": "Ongoing",
       "duration": "Apr 2026 – Present",
-      "overview": "A sequence prediction benchmark that tests whether models trained on one cricket format or period still work on another, and CricEnvGate, a Transformer built to separate what transfers from what does not.",
+      "overview": "A sequence forecasting benchmark that tests whether cricket models trained on one format or era still work on another (ODI → T20, and across time), and CricEnvGate, a Transformer built to separate what transfers from what does not.",
       "pipeline": [
         "5,593 matches",
-        "2.04M events",
+        "2.04M deliveries",
         "1.82M windows",
-        "6 environments",
+        "6 format × era environments",
         "CricEnvGate",
         "Out-of-distribution test"
       ],
       "datasets": [
-        "5,593 matches",
-        "2.04M events",
-        "284 experiments on 2× H100"
+        "284 experiments on 2× 80GB H100",
+        "DG objectives within 0.004 nats of ERM"
       ],
       "paperStatus": "Submitted to ACL, under review"
     }
   ],
   "coursework": [
     "Data Structures & Algorithms",
-    "Database Management Systems",
-    "Operating Systems",
-    "Computer Networks",
     "Linear Algebra",
     "Probability & Statistics",
     "Introduction to Data Science"
